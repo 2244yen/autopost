@@ -17,7 +17,7 @@
 
     $helper = $fb->getRedirectLoginHelper();
 
-    $loginUrl = $helper->getLoginUrl('http://fbsamples.local/callback.php', $params);
+    $loginUrl = $helper->getLoginUrl('https://auto-post-ld.herokuapp.com/callback.php', $params);
 
     header('Location: '. $loginUrl);
     exit;

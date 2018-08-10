@@ -13,7 +13,10 @@ function statusChangeCallback(response) {
       // The person is not logged into your app or we are unable to tell.
       document.getElementById('status').innerHTML = 'Please log ' +
         'into this app.';
-      FB.login();
+      FB.login(function(response) {
+        // Handle the response object, like in statusChangeCallback() in our demo
+        // code.
+      });
     }
 }
 
