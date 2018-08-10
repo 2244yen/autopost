@@ -13,6 +13,7 @@ function statusChangeCallback(response) {
       // The person is not logged into your app or we are unable to tell.
       document.getElementById('status').innerHTML = 'Please log ' +
         'into this app.';
+      FB.login();
     }
 }
 
@@ -27,7 +28,7 @@ function checkLoginState() {
 
 window.fbAsyncInit = function() {
     FB.init({
-      appId      : '{your-app-id}',
+      appId      : '204724790399360',
       cookie     : true,  // enable cookies to allow the server to access 
                           // the session
       xfbml      : true,  // parse social plugins on this page
