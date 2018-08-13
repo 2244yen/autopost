@@ -4,11 +4,14 @@
     use Facebook\FacebookApp;
     use Facebook\FacebookRequest;
 
-    session_start();
+    require_once __DIR__ . '/config.php';
 
-    $app_id = '204724790399360';
-    $app_secret = 'eafde13d5200413c35241dd20608b084';
-    $page_id = '1685036604955076';
+    // session_start();
+    $config = new config();
+
+    $app_id = $config::$app_id;
+    $app_secret = $config::$app_secret;
+    $page_id = $config::$page_id;
 
     $app = new FacebookApp($app_id, $app_secret);
     $fb = new Facebook\Facebook(array(
@@ -18,7 +21,7 @@
     ));
 
     //Page access token has been got from get_page_access_token.php
-    $access_token = 'EAAC6MjRokYABADVJVpMPpQoCQW6EdfDeUhhp9pQlFlnpqsKiP0lsW0wDrmbM5ZCNsdKiifplr81lOxZBZBLl878iy6C9OZA5bfAhW5CGCuTrU237InTlybFtAKYDdhPic961FHUWjIdbiAWyleQZBh1ZAj2tcEWPiX573zzPFPTfqP0gUZCeyHTMRjJ6Ys119pHuZAyPaJoXfwZDZD';
+    $access_token = $_SESSION['page_token'];
 
     $post_data = array(
         'message' => 'test message'

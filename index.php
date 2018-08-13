@@ -1,23 +1,8 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Demo Auto Post Content</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="js/main.js"></script>
-</head>
-<body>
-    <div id="fb-root"></div>
+<?php
+    session_start();
 
-    <!-- <div class="fb-login-button" 
-        data-max-rows="1" data-size="large" 
-        data-button-type="login_with"
-        data-show-faces="false" 
-        data-auto-logout-link="false" 
-        data-use-continue-as="false">
-    </div> -->
-    <div id="status">
-    </div>
-</body>
-</html>
+    include_once 'login.php';
+    include_once 'get_page_access_token.php';
+
+    error_reporting(E_ALL);
+    ini_set("display_errors", 0);
