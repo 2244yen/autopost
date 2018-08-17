@@ -1,6 +1,6 @@
 [
     {
-        "name": "facebook/php-sdk-v4",
+        "name": "facebook/graph-sdk",
         "version": "5.6.3",
         "version_normalized": "5.6.3.0",
         "source": {
@@ -57,7 +57,6 @@
         "keywords": [
             "facebook",
             "sdk"
-        ],
-        "abandoned": "facebook/graph-sdk"
+        ]
     }
 ]

@@ -4,10 +4,10 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d7ab18bb69fdcd9b4605771720358835",
+    "content-hash": "0719d5c0f2ea9b27280d086fced50c4d",
     "packages": [
         {
-            "name": "facebook/php-sdk-v4",
+            "name": "facebook/graph-sdk",
             "version": "5.6.3",
             "source": {
                 "type": "git",
@@ -62,7 +62,6 @@
                 "facebook",
                 "sdk"
             ],
-            "abandoned": "facebook/graph-sdk",
             "time": "2018-07-03T02:25:00+00:00"
         }
     ],

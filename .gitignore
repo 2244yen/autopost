@@ -1,7 +1,0 @@
-/node_modules
-/public/uploads
-/storage/*.key
-/vendor
-/.idea
-composer.lock
-.DS_Store
